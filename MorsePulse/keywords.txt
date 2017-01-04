@@ -1,0 +1,3 @@
+MorsePulse 		KEYWORD1
+pulseText 		KEYWORD2
+pulseLetter 	KEYWORD2
