@@ -15,7 +15,7 @@
 #include <Wire.h> 
 
 // Create new RTC module object
-RtcDS3231 rtcModule;
+RtcDS3231<TwoWire> rtcModule(Wire);
 
 void setup () {
 
@@ -30,4 +30,3 @@ void setup () {
 void loop(void) {
 
 }
-
