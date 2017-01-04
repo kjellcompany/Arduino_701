@@ -15,12 +15,14 @@
 // Include the libraries
 #include <RtcDS3231.h>
 #include "U8glib.h"
+#include <Wire.h> 
+
 
 // Create new SSD1306 I2C display with 128x64 resolution
 U8GLIB_SSD1306_128X64 oled(U8G_I2C_OPT_NONE);  // I2C / TWI 
 
 // Create new RTC module
-RtcDS3231 rtcModule;
+RtcDS3231<TwoWire> rtcModule(Wire);
 
 // Create variables for time
 byte hours;
@@ -60,6 +62,5 @@ void draw(void) {
   oled.setPrintPos(0, 45);
   oled.print(timeString);
 }
-
 
 
