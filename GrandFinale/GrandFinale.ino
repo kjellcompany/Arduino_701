@@ -44,7 +44,7 @@ SSD1306AsciiWire oled;
 Adafruit_NeoPixel ring = Adafruit_NeoPixel(neoPixels, neoPin, NEO_GRB);
 
 // Create new RTC module object
-RtcDS3231 rtcModule;
+RtcDS3231<TwoWire> rtcModule(Wire);
 
 // Create new client object
 WiFiEspClient client;
@@ -255,4 +255,3 @@ void printWifiStatus() {
   Serial.print("IP Address: ");
   Serial.println(ip);
 }
-
