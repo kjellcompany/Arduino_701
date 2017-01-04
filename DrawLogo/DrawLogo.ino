@@ -1,5 +1,5 @@
 /*
-  Example sketch DrawAnimation.ino version 7.01.
+  Example sketch DrawLogo.ino version 7.01.
   From Kjell & Company's book "Hur funkar Arduino?" version 7.01.
   From Kjell & Company's book "Hvordan virker Arduino?" version 7.01.
 
