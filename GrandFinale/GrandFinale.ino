@@ -235,7 +235,7 @@ void updateTemp(){
   
   // Read temperature
   RtcTemperature rtcTemp = rtcModule.GetTemperature();
-  temp = rtcTemp.AsFloat();
+  temp = rtcTemp.AsFloatDegC();
 
   // Map temperature to servo
   int tempPointer = map(temp, 18, 28, 30, 140);
